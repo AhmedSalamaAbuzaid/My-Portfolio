@@ -929,7 +929,9 @@ footer{
     background-color: var(--background-body);
     color: var(--secandary-color);
     padding: 15px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 footer span{
     color: var(--small-colors);
