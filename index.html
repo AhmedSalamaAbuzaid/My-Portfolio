@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="./js/master.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+
+    <!-- Start setting box -->
+    <div class="setting-box">
+        <div class="icone" id="dark-moon"><i class="fa-solid fa-moon"></i></div>
+        <div class="setting-icon">
+            <i id="gear-icon" class="fa-solid fa-gear"></i>
+        </div>
+        <div class="setting-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#7f00ff"></li>
+                    <li data-color="#ba90da"></li>
+                    <li data-color="#c34efc"></li>
+                    <li data-color="#3F51B5"></li>
+                    <li data-color="#03A9F4"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4 class="random">Random backgrounds</h4>
+                <div class="random-btns">
+                    <span class="yes active" data-choise="yes">Yes</span>
+                    <span class="no" data-choise="no">No</span>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>Show bullets</h4>
+                <div class="bullets-btns">
+                    <span class="yes active" data-display="Show">Show</span>
+                    <span class="no" data-display="Hide">Hide</span>
+                </div>
+            </div>
+
+            <button class="reset-options">
+                Reset Options
+            </button>
+        </div>
+    </div>
+    <!-- End setting box -->
+
+    <!-- Start Nav bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section="#social">
+            <div class="tooltip">Hire Me</div>
+        </div>
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About Me</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">My Skills</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">My Gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">Testimonials</div>
+        </div>
+        <div class="bullet" data-section=".contact">
+            <div class="tooltip">Contact Me</div>
+        </div>
+    </div>
+    <!-- End Nav bullets -->
+
+
+    <!-- Start landig page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="header-area">
+            <div class="logo-landing">Spaecial Design</div>
+            <div class="links-container">
+                <ul class="links-landing">
+                    <li><a data-section=".about-us" href="#">About</a></li>
+                    <li><a data-section="#social"  class="active" href="#" >Hire Me</a></li>
+                    <li><a data-section=".skills"  href="" >Skills</a></li>
+                    <li><a data-section=".timeline"  href="#">Timeline</a></li>
+                    <li><a data-section=".features"  href="#">Feature</a></li>
+                    <li><a data-section=".testimonials"  href="#">Tesimonials</a></li>
+                    <li><a data-section=".contact"  href="#">Contact Me</a></li>
+                </ul>
+                <div class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text">
+            <h1>Are you looking for <span>Frontend Develeoper ?</span> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident praesentium vel vero possimus magni beatae eaque! Repellat maxime nam illum! Quos, voluptatem atque! Fugit odit maiores autem reprehenderit? Cum, fuga.</p>
+        </div>
+    </div>
+    <!-- End landig page -->
+    
+    <!-- Start social-->
+    <div class="container" id="social">
+        <nav>
+            <div class="logo">Hi People<b>.</b></div>
+            <ul class="navItems">
+                <p>I Would Love To See You In My Social Media</p>
+
+            </ul>
+            <div class="links">
+                <div class="link-one">
+                    <a target="_blank" href="https://www.linkedin.com/in/ahmed-salama-476b77216"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/ahmedslamadrag"><i class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" title="facebook page" href="https://www.facebook.com/ElBanika"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a target="_blank" title="facebook account"  href="https://www.facebook.com/ahmedsalamaa"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="link-two">
+                    <a target="_blank"  href="https://www.tiktok.com/@ahmedsalama9595"><i class="fa-brands fa-tiktok"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/ahmedsalama_a/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a target="_blank" href="https://codepen.io/AhmedSalamaAbuzaid"><i class="fa-brands fa-codepen"></i></i></a>
+                    <a target="_blank" href="https://github.com/AhmedSalamaAbuzaid"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1 id="multi">I'm <span class="multi-text"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos laboriosam voluptates, officiis  Delectus eum libero similique perspiciatis adipisci praesentium.</p>
+                <div class="btns">
+                    <a href="https://www.canva.com/design/DAFFjRDoUEw/SkVPBaKMQ8Ys06Z-mHbYog/view?website#1:web-design-design-thinking-wireframe-creation-front-end-coding-problem-solving-computer-literacy-project-management-tools-strong-communication" target="_blank"><button class"Hire-me">Hire me</button></a>
+                    <a href="https://export-download.canva.com/DoUEw/DAFFjRDoUEw/30/0/0001-40933494627.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20221114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221114T072509Z&X-Amz-Expires=45153&X-Amz-Signature=7a5c19296d01d38662196eb6d64532d9a969e79a7546bb7b65a6868669bf3274&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27AhmedSalamaAbuzaid.png&response-expires=Mon%2C%2014%20Nov%202022%2019%3A57%3A42%20GMT"><button class"Donload-Cv">Download CV</button></a>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="./images/comhiclipartifata.jpg" id="splash">
+                    <img src="./images/me-mountian2kk.jpg" id="my-picture" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End social-->
+
+    <!--Stat about me  -->
+    <div class="container-responsive">
+        <div class="about-us">
+            <div class="info-box" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit nrnatur enim nemo voluptates ad labore repellendus officia, nisi tempora officiis ipsam modi hic amet, dignissimos natus error nesciunt accusamus unde! Incidunt vel modi alias. Incidunt velit tempora beatae, cum animi fugit est laudantium provident maxime, quis omnis harum, reprehenderit pariatur excepturi!</p>
+            </div>
+            <div class="image-box" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <img src="./images/clipartmax-gnetelman.png" alt="about-us">
+            </div>
+        </div>
+    </div>
+    <!--End about me  -->
+
+    <!-- Start ourskills -->
+    <div class="skills">
+        <div class="container-responsive">
+            <h2>My Skills</h2>
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="80%" data-new="0"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="90%" data-new="0"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <span data-progress="70%" data-new="0"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Reactjs</div>
+                <div class="skill-progress">
+                    <span data-progress="60%" data-new="0"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Sass</div>
+                <div class="skill-progress">
+                    <span data-progress="85%" data-new="0"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Pugjs</div>
+                <div class="skill-progress">
+                    <span data-progress="75%" data-new="0"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End ourskills -->
+
+    <!-- Start Gallery -->
+    <div class="gallery">
+        <div class="container-responsive">
+            <h2>My Gallery</h2>
+            <div class="images-box">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/my-website/" src="./images/gallary/2022-11-19 (0).png" alt="Image Two">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/move-moon-boat-montain-onscrolling/" src="./images/gallary/2022-11-19 (1).png" alt="Image Two">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/to-do-list/" src="./images/gallary/2022-11-19 (2).png" alt="Image Three">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/fetch-repositories/"  src="./images/gallary/2022-11-19 (3).png" alt="Image Four">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/Quiz-Application/"  src="./images/gallary/2022-11-19 (4).png" alt="Image Five">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/Memory-Game/"  src="./images/gallary/2022-11-19 (5).png" alt="">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/Typing-Speed-Test-Game/"  src="./images/gallary/2022-11-19 (6).png" alt="">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/Create-Image-Slider/"  src="./images/gallary/2022-11-19 (7).png" alt="">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/hang-man-game/"  src="./images/gallary/2022-11-19 (8).png" alt="">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/kasper-template2/"  src="./images/gallary/2022-11-19 (10).png" alt="">
+                <img data-link="https://ahmedsalamaabuzaid.github.io/leon-Template1/"  src="./images/gallary/2022-11-19 (11).png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- start Timeline -->
+    <div class="timeline">
+        <div class="container-responsive">
+            <div class="timeline-content">
+
+                <div class="year">2020</div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a ex vitae laborum beatae aliquam, in deleniti? Tempora non minus magni, architecto consequuntur repellat nulla illum, sequi excepturi alias cupiditate?</p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a ex vitae laborum beatae aliquam, in deleniti? Tempora non minus magni, architecto consequuntur repellat nulla illum, sequi excepturi alias cupiditate?</p>
+                    </div>
+                </div>
+                
+                <div class="clear-fix"></div>
+                <div class="year">2021</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a ex vitae laborum beatae aliquam, in deleniti? Tempora non minus magni, architecto consequuntur repellat nulla illum, sequi excepturi alias cupiditate?</p>
+                    </div>
+                </div>
+                
+                <div class="clear-fix"></div>
+                <div class="year">2022</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a ex vitae laborum beatae aliquam, in deleniti? Tempora non minus magni, architecto consequuntur repellat nulla illum, sequi excepturi alias cupiditate?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Timeline -->
+
+    <!-- start features -->
+    <div class="features">
+        <h2>My features</h2>
+        <div class="container-responsive">
+            <div class="feat-box"  data-aos="fade-down">
+                <img src="./images/featuer-01.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="feat-box"  data-aos="fade-down" data-aos-delay="300">
+                <img src="./images/featuer-02.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="feat-box"  data-aos="fade-down" data-aos-delay="700" >
+                <img src="./images/featuer-03.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="feat-box"  data-aos="fade-down" data-aos-delay="850">
+                <img src="./images/featuer-04.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="feat-box"  data-aos="fade-down" data-aos-delay="1100">
+                <img src="./images/featuer-05.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="feat-box"  data-aos="fade-down" data-aos-delay="1200">
+                <img src="./images/featuer-06.png" alt="">
+                <h4>Development</h4>
+                <p>I can do any thing you imagine in no time .</p>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <!-- End features -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials">
+        <div class="container-responsive">
+            <h2>Testimonials</h2>
+            <div class="ts-box" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="person-info">
+                    <img src="./images/antish-w-agry.webp" alt="">
+                    <h4>Hitham Antish</h4>
+                    <p>Actor At Company</p>
+                </div>
+                <p>I like this Website it really help me to improve my work and make it easy to deal with my clints.</p>
+            </div>
+            <div class="ts-box" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="person-info">
+                    <img src="./images/mark-zuckerberg.jpg" alt="">
+                    <h4>mark Zuckerberg</h4>
+                    <p>CEO At Company</p>
+                </div>
+                <p>i have learned too much from this website that inspire me to bulid facebook "I am lying". </p>
+            </div>
+            <div class="ts-box" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="person-info">
+                    <img src="./images/hamo-beka.jpeg" alt="">
+                    <h4>Hamo Beka</h4>
+                    <p>Singer At Company</p>
+                </div>
+                <p>I like this Website it really help me to reach most of my fans and to be famous.</p>
+            </div> 
+        </div>
+    </div>
+
+
+    <!-- End Testimonials -->
+
+    <!-- Start contact me -->
+    <div class="contact">
+        <div class="overlay"></div>
+        <div class="container-responsive">
+            <h2>Contact Me</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="Username">
+                    <input type="number" placeholder="Your Phone" name="phone">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Subject" name="Subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your massage" id=""></textarea>
+                    <input type="submit" value="contact">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End contact me -->
+
+    <!-- Start Footer -->
+    <footer>
+        I hope you like the website <br>
+        inspired by  &#169; <span>Osama elzero</span> 
+    </footer>
+    <!-- End Footer -->
+
+    <span class="up">Up</span>
+
+    <!-- aos animtion on scroling -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
