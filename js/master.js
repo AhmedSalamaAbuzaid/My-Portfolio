@@ -433,7 +433,6 @@ document.querySelector(".reset-options").onclick = function () {
 // Toggel menu
 
 let togglebtn = document.querySelector(".toggle-menu");
-let togglebtnSpan = document.querySelector(".toggle-menu span");
 let tLinks = document.querySelector(".links-landing");
 
 togglebtn.onclick = function (e) {
@@ -442,13 +441,13 @@ togglebtn.onclick = function (e) {
     this.classList.toggle("menu-active");
     tLinks.classList.toggle("open");
 };
-tLinks.onclick = function (e) {
-    e.stopPropagation();
-};
+// tLinks.onclick = function (e) {
+//     e.stopPropagation();
+// };
 
 
 document.addEventListener('click', function(e){
-    if(e.target !== togglebtn && e.target !== tLinks){
+    if(e.target !== togglebtn){
         if (tLinks.classList.contains("open")){
             togglebtn.classList.toggle("menu-active");
             tLinks.classList.toggle("open");
