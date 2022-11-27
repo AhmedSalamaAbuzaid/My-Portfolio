@@ -84,7 +84,7 @@ if(localStorage.getItem("background_option") !== null) {
         if(backgrounOptionStorag === "no"){
             backgrounOption = false ;
             document.querySelector(".random-btns .no").classList.add("active");
-            landingPage.style.backgroundImage = `url("../images/background-landing/${localStorage.getItem("img_Data")}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${localStorage.getItem("img_Data")}")`;
 
 
             clearInterval(backgroundInterval);
@@ -93,7 +93,7 @@ if(localStorage.getItem("background_option") !== null) {
 
             document.querySelector(".random-btns .yes").classList.add("active");
 
-            landingPage.style.backgroundImage = `url("../images/background-landing/${localStorage.getItem("img_Data")}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${localStorage.getItem("img_Data")}")`;
 
             localStorage.removeItem("backgroundImage");
         }
@@ -144,7 +144,7 @@ function randomizeImgs () {
             // let randomNum = Math.floor(Math.random() * imgsArray.length);
             let indexo = Math.floor(Math.random() * imgsArray.length)
             // change Backgrounf image url
-            landingPage.style.backgroundImage = `url("../images/background-landing/${imgsArray[indexo]}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${imgsArray[indexo]}")`;
             
             imgPause = imgsArray[indexo];
             localStorage.setItem("img_Data",imgPause);
