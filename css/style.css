@@ -48,9 +48,17 @@ body{
 .show{
     right: 10px;
 }
-.show:hover,
-.show:active{
-    transform:rotate(1turn) scale(2);
+.show:hover{
+    animation: rotatandscale .5s ease;
+}
+
+@keyframes rotatandscale {
+    50%{
+        transform:rotate(1turn) scale(2);
+    }
+    100%{
+        transform:rotate(0turn) scale(1);
+    }
 }
 .container {
     width: 100%;
