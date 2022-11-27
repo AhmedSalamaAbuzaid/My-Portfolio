@@ -1,5 +1,4 @@
 # My-Portfolio
-My-Portfolio
 
 my portfolio most of the things that I have learned on this simple website,
 I have used Vanilla javascript, CSS, and HTML.
