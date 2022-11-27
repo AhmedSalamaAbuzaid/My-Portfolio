@@ -154,7 +154,6 @@ const observer = new IntersectionObserver(entries => {
     });
 }, {
     threshold: 1,
-    rootMargin:"-10px",
 });
 
 galleryImg.forEach(img => {
