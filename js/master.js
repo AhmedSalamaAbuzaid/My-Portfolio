@@ -148,6 +148,7 @@ function randomizeImgs () {
             
             imgPause = imgsArray[indexo];
             localStorage.setItem("img_Data",imgPause);
+        
         },4000);
     }
 }
@@ -197,6 +198,7 @@ window.onscroll = function () {
 
 
     let up = document.querySelector(".up");  
+
     up.onclick = function () {
 
         window.scrollTo({
