@@ -187,7 +187,9 @@ body{
     margin: auto;
     overflow: hidden;
 }
-
+.container-responsive.overflow-show{
+    overflow: visible;
+}
 
 .landing-page{
     min-height:100vh;
@@ -864,6 +866,7 @@ overflow: hidden;    position: relative;
     gap: 10px;
     width: 80%;
     margin: auto;
+    position: relative;
 }
 .contact form div {
     width: 50%;
@@ -932,9 +935,11 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
-footer span{
+footer  span:last-child{
     color: var(--small-colors);
+    margin-left: 5px;
 }
 /* End Footer */
 
