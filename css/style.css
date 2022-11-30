@@ -452,7 +452,7 @@ button:hover {
     }
     .imgbox img{
         width: 160%;
-        top: -1px;
+        top: -40px;
         right: 35px;
     }
     .imgbox #splash {
