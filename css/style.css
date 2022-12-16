@@ -151,8 +151,8 @@ b{
     color: var(--secandary-color);
     margin: 25px 10px;
 }
-.links-two{
-    padding-left: 2px;
+.link-two{
+    padding-left: 1px;
     margin-top: 8px;
 }
 .wrapper{
