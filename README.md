@@ -21,3 +21,4 @@ and you have full control in this setting box , you can control of random backgr
 you can move very smothely by cliking on the quick nav bullets in the right of page as same as the navbar above.
 
 dark mode button it automaticly saved in the local storage . 
+.
