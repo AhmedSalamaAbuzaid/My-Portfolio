@@ -187,7 +187,9 @@ body{
     margin: auto;
     overflow: hidden;
 }
-
+.container-responsive.overflow-show{
+    overflow: visible;
+}
 
 .landing-page{
     min-height:100vh;
@@ -325,6 +327,11 @@ body{
     border-right: none;
     border-left: none;
 }
+@media (max-width: 676px) {
+    .introduction-text {
+        width: 80%;
+    }
+}
 .introduction-text h1{
     margin-top: 0;
 }
@@ -349,8 +356,8 @@ body{
         font-size: 15px;
     }
     .introduction-text p{
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 15px;
+        line-height: 1.5;    
     }
 }
 
@@ -864,6 +871,7 @@ overflow: hidden;    position: relative;
     gap: 10px;
     width: 80%;
     margin: auto;
+    position: relative;
 }
 .contact form div {
     width: 50%;
@@ -929,10 +937,14 @@ footer{
     background-color: var(--background-body);
     color: var(--secandary-color);
     padding: 15px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
-footer span{
+footer  span:last-child{
     color: var(--small-colors);
+    margin-left: 5px;
 }
 /* End Footer */
 

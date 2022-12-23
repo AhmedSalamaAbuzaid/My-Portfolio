@@ -84,7 +84,7 @@ if(localStorage.getItem("background_option") !== null) {
         if(backgrounOptionStorag === "no"){
             backgrounOption = false ;
             document.querySelector(".random-btns .no").classList.add("active");
-            landingPage.style.backgroundImage = `url("../images/background-landing/${localStorage.getItem("img_Data")}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${localStorage.getItem("img_Data")}")`;
 
 
             clearInterval(backgroundInterval);
@@ -93,7 +93,7 @@ if(localStorage.getItem("background_option") !== null) {
 
             document.querySelector(".random-btns .yes").classList.add("active");
 
-            landingPage.style.backgroundImage = `url("../images/background-landing/${localStorage.getItem("img_Data")}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${localStorage.getItem("img_Data")}")`;
 
             localStorage.removeItem("backgroundImage");
         }
@@ -144,10 +144,11 @@ function randomizeImgs () {
             // let randomNum = Math.floor(Math.random() * imgsArray.length);
             let indexo = Math.floor(Math.random() * imgsArray.length)
             // change Backgrounf image url
-            landingPage.style.backgroundImage = `url("../images/background-landing/${imgsArray[indexo]}")`;
+            landingPage.style.backgroundImage = `url("./images/background-landing/${imgsArray[indexo]}")`;
             
             imgPause = imgsArray[indexo];
             localStorage.setItem("img_Data",imgPause);
+        
         },4000);
     }
 }
@@ -197,6 +198,7 @@ window.onscroll = function () {
 
 
     let up = document.querySelector(".up");  
+
     up.onclick = function () {
 
         window.scrollTo({
@@ -433,7 +435,6 @@ document.querySelector(".reset-options").onclick = function () {
 // Toggel menu
 
 let togglebtn = document.querySelector(".toggle-menu");
-let togglebtnSpan = document.querySelector(".toggle-menu span");
 let tLinks = document.querySelector(".links-landing");
 
 togglebtn.onclick = function (e) {
@@ -442,13 +443,13 @@ togglebtn.onclick = function (e) {
     this.classList.toggle("menu-active");
     tLinks.classList.toggle("open");
 };
-tLinks.onclick = function (e) {
-    e.stopPropagation();
-};
+// tLinks.onclick = function (e) {
+//     e.stopPropagation();
+// };
 
 
 document.addEventListener('click', function(e){
-    if(e.target !== togglebtn && e.target !== tLinks){
+    if(e.target !== togglebtn){
         if (tLinks.classList.contains("open")){
             togglebtn.classList.toggle("menu-active");
             tLinks.classList.toggle("open");

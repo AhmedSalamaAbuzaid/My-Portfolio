@@ -32,10 +32,10 @@ body{
 .up {
     position: fixed;
     bottom: 40px;
-    right: -30px;
+    right: -45px;
     color: white;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
     border-radius: 4px;
     font-family: Arial,tahoma;
@@ -48,9 +48,17 @@ body{
 .show{
     right: 10px;
 }
-.show:hover,
-.show:active{
-    transform:rotate(1turn) scale(2);
+.show:hover{
+    animation: rotatandscale .5s ease;
+}
+
+@keyframes rotatandscale {
+    50%{
+        transform:rotate(1turn) scale(2);
+    }
+    100%{
+        transform:rotate(0turn) scale(1);
+    }
 }
 .container {
     width: 100%;
@@ -76,7 +84,7 @@ nav{
     line-height: 80px;
     z-index: 100;
     margin: 10px auto;
-    padding: 0 10%;
+    padding: 0 45px;
 }
 .logo{
     display: flex;
@@ -143,11 +151,10 @@ b{
     color: var(--secandary-color);
     margin: 25px 10px;
 }
-.links-two{
-    padding-left: 2px;
+.link-two{
+    padding-left: 1px;
+    margin-top: 8px;
 }
-
-
 .wrapper{
     display: flex;
     width: 100%;
@@ -286,9 +293,11 @@ button{
     text-transform: capitalize;
     box-shadow: 0px 8px 10px var(--secandary-color);
     z-index: 100;
+    border-radius: 5px;
 }
 button:hover {
     background-color: var(--small-colors);
+    color: white;
 }
 .imgbox{
     position: relative;
@@ -320,7 +329,7 @@ button:hover {
 @media (min-width:676px) {
     h1#multi{
         font-size: 3em;
-        width: 130%;
+        width: 160%;
     }
     button {
         font-size: 10px;
@@ -342,9 +351,9 @@ button:hover {
         padding: 0 15%;
     }
     nav{
-        padding: 0 15%;
-        /* line-height: 15px; */
+        padding-left: 15%;
     }
+
 }
 @media (min-width:820px) {
     h1#multi{
@@ -385,7 +394,6 @@ button:hover {
     .logo{
         line-height: 40px;
         margin-right: 44px;
-        margin-left: 15px;
     }
     .container{
         min-width: 320px;;
@@ -396,9 +404,14 @@ button:hover {
         width: 76px;
         padding: 8px;
         border-width: 2px;
+        margin-right: 14px;
     }
+
     .links a{
         margin: 1px;
+    }
+    .links .links-one{
+        margin-bottom: 5px;
     }
     .topline{
         letter-spacing: 2px;
@@ -422,7 +435,10 @@ button:hover {
         top: -45px;
         width: auto;
         left: 30px;
-
+    }
+    .cols.cols0 p{
+        margin-right: 50px;
+        line-height: 1.5;
     }
     .wrapper {
         padding: 15px;
@@ -438,7 +454,7 @@ button:hover {
     }
     .imgbox img{
         width: 160%;
-        top: -1px;
+        top: -40px;
         right: 35px;
     }
     .imgbox #splash {
@@ -464,9 +480,9 @@ button:hover {
         left: -7px;
     }
     button {
-        font-size: 7px;
+        font-size: 12px;
         padding: 5px 4px;
-        margin: 6px 5px;
+        margin: 15px 5px;
         letter-spacing: 0px;
         box-shadow: 0 4px 6px rgb(0 0 0 / 40%);
     }
@@ -483,6 +499,111 @@ button:hover {
     100%{
         transform:scale(1.8) rotate(.50turn);
     }
+}
+
+
+
+
+.btn {
+    padding: 10px;
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.callme {
+    position: absolute;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 40%);
+    color: #999 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 5px;
+    width: 100%;
+    bottom: -48px;
+}
+.callme span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--small-colors));
+    animation: animate1 2s linear infinite;
+}
+.callme span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--small-colors));
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+.callme span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, var(--small-colors));
+    animation: animate3 2s linear infinite;
+}
+.callme span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to top, transparent, var(--small-colors));
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate1 {
+    0% {
+    transform: translateX(-100%);
+}
+
+100% {
+    transform: translatex(100%);
+}
+}
+@keyframes animate2 {
+    0% {
+    transform: translateY(-100%);
+}
+
+100% {
+    transform: translateY(100%);
+}
+}
+@keyframes animate3 {
+    0% {
+    transform: translateX(100%);
+}
+
+100% {
+    transform: translatex(-100%);
+}
+}
+@keyframes animate4 {
+    0% {
+    transform: translateY(100%);
+}
+
+100% {
+    transform: translateY(-100%);
+}
 }
 
 @media (min-width: 400px) and (max-width:676px) { /* Desk Top => Tablets */
