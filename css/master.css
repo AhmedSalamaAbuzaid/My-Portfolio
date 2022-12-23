@@ -357,7 +357,11 @@ body{
     }
     .introduction-text p{
         font-size: 15px;
+<<<<<<< HEAD
         line-height: 1.5;    
+=======
+        line-height: 1.5;
+>>>>>>> cf1dbc7a72d82a3721843f6392ca8765e8137a24
     }
 }
 
