@@ -506,10 +506,7 @@ button:hover {
 
 .btn {
     padding: 10px;
-<<<<<<< HEAD
     color: var(--bs-btn-color);
-=======
->>>>>>> cf1dbc7a72d82a3721843f6392ca8765e8137a24
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
