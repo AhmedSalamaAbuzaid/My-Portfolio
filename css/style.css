@@ -515,6 +515,9 @@ button:hover {
     gap: 17px;
     font-size: 25px;
 }
+.footer-links i{
+    color: var(--secandary-color);
+}
 .btn {
     padding: 10px;
     color: var(--bs-btn-color);
