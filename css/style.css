@@ -477,15 +477,6 @@ button:hover {
         }
     }
     
-    
- .footer-links{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    width: 100%;
-    gap: 17px;
-    font-size: 25px;
-}
     .btns{
         display: flex;
         position: relative;
@@ -515,7 +506,15 @@ button:hover {
 
 
 
-
+    
+ .footer-links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    gap: 17px;
+    font-size: 25px;
+}
 .btn {
     padding: 10px;
     color: var(--bs-btn-color);
