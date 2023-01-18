@@ -137,11 +137,13 @@ b{
     right: -343px;
     position: relative;
 }
-.links:hover {
+.links:hover,
+.footer-links:hover {
     border-color: var(--primary-color);
     transition: 1s;
 }
-.links i:hover{
+.links i:hover,
+.footer-links i:hover{
     color: var(--small-colors);
     transition: .4s ease-in-out;
     transform: rotate(1turn);
@@ -491,6 +493,7 @@ button:hover {
     }
     
 }
+
 @keyframes animateSplash {
     50%{
         transform:scale(1.8) rotate(.65turn);
@@ -500,9 +503,18 @@ button:hover {
         transform:scale(1.8) rotate(.50turn);
     }
 }
+.footer-links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    gap: 17px;
+    font-size: 25px;
+}
 
-
-
+.footer-links i{
+    color: var(--secandary-color);
+}
 
 .btn {
     padding: 10px;
