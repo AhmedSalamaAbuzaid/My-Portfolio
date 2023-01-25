@@ -22,3 +22,4 @@ you can move very smothely by cliking on the quick nav bullets in the right of p
 
 dark mode button it automaticly saved in the local storage . 
 
+...
